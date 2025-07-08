@@ -46,7 +46,7 @@ namespace BankApp
             // TASK 9: Demonstrate Immutability of Structs
             // TASK 9: Step 1 - Create a Transaction object.
             var transactionStruct = new Transaction(200, DateTime.Now, "blah blah blah");
-            transactionStruct.Amount = 200; // Here is the immutability, I cannot change the amount
+            // transactionStruct.Amount = 200; // Here is the immutability, I cannot change the amount
             transactionStruct = new Transaction(100, DateTime.Now, "blah blah blah"); // However I can still change the value of this struct
             // TASK 9: Step 2 - Display the transaction details using the ToString method.
             Console.Out.WriteLine(transactionStruct); // No need to say ToString() explicitly
