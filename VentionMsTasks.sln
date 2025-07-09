@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsAndAnonymousTypes",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuplesAndSwitchStatement", "TuplesAndSwitchStatement\TuplesAndSwitchStatement.csproj", "{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
