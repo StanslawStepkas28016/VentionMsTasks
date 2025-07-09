@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsAndAnonymousTypes", "GenericsAndAnonymousTypes\GenericsAndAnonymousTypes.csproj", "{477198A7-CE76-47FB-9BD8-52E4C2295801}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples", "Tuples\Tuples.csproj", "{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{477198A7-CE76-47FB-9BD8-52E4C2295801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{477198A7-CE76-47FB-9BD8-52E4C2295801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{477198A7-CE76-47FB-9BD8-52E4C2295801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A411CE-88A4-4F4A-BA77-AEA8AB70B021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

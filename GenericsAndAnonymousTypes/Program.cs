@@ -2,6 +2,13 @@
 
 public class Program
 {
+    public enum Test
+    {
+        A, // 0
+        B, // 1
+        C = 7,
+        D, // 8
+    }
     public static void Main(string[] args)
     {
         // Generic with Generic Interfaces
