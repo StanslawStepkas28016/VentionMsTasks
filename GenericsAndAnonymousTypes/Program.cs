@@ -4,8 +4,18 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        // Generic with Generic Interfaces
         var item = new Item<Book>(new Book("desc", DateTime.UtcNow));
         Console.Out.WriteLine(item);
+
+        // Anonymous type
+        var anon = new
+        {
+            Desc = item.Data.Description,
+            SomeOtherProperty = "SomeOtherProperty"
+        };
+
+        Console.Out.WriteLine(anon.Desc + " " + anon.SomeOtherProperty);
     }
 
     private static void Old()

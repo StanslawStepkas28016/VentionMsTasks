@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesStructsRecords", "Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{4185D087-674B-45C1-86F4-19DC48C7B0CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{477198A7-CE76-47FB-9BD8-52E4C2295801}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsAndAnonymousTypes", "GenericsAndAnonymousTypes\GenericsAndAnonymousTypes.csproj", "{477198A7-CE76-47FB-9BD8-52E4C2295801}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
