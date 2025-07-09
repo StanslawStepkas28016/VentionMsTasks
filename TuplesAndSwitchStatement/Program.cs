@@ -3,7 +3,17 @@
     public static void Main(string[] args)
     {
         // Tuples();
+        // Switch();
+        Console.Out.WriteLine(int.MaxValue);
+        int a = 2147483647;
+        int b = 2147483647;
+
+        int c = checked(a + b);
+        Console.Out.WriteLine(c);
+        
+        
     }
+    
 
     private static void Switch()
     {

@@ -1,4 +1,5 @@
 ﻿using Generics;
+using Generics.Generics2Nd;
 
 public class Program
 {
@@ -9,7 +10,24 @@ public class Program
         C = 7,
         D, // 8
     }
+
     public static void Main(string[] args)
+    {
+        // Generics1St();
+        Generics2Nd();
+    }
+
+    private static void Generics2Nd()
+    {
+        // var universalCalculator = new UniversalCalculator<double>();
+        // var res = universalCalculator.Add(1.2, 2);
+        // Console.Out.WriteLine(res.GetType());
+        // Console.Out.WriteLine(res);
+
+        UniversalCalculator.Add<int>(1, 1);
+    }
+    
+    private static void Generics1St()
     {
         // Generic with Generic Interfaces
         var item = new Item<Book>(new Book("desc", DateTime.UtcNow));
