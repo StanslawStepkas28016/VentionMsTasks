@@ -1,8 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankCustomer", "BankCustomer\BankCustomer.csproj", "{61D75A25-636A-4A18-914E-C95BF85841B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{61D75A25-636A-4A18-914E-C95BF85841B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankCustomerV2", "BankCustomerV2\BankCustomerV2.csproj", "{1E190395-5D07-4A47-BE84-CF250C18598D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesStructsRecords", "ClassesStructsRecords\ClassesStructsRecords.csproj", "{1E190395-5D07-4A47-BE84-CF250C18598D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{4185D087-674B-45C1-86F4-19DC48C7B0CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{477198A7-CE76-47FB-9BD8-52E4C2295801}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +22,13 @@ Global
 		{1E190395-5D07-4A47-BE84-CF250C18598D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E190395-5D07-4A47-BE84-CF250C18598D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E190395-5D07-4A47-BE84-CF250C18598D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4185D087-674B-45C1-86F4-19DC48C7B0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4185D087-674B-45C1-86F4-19DC48C7B0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4185D087-674B-45C1-86F4-19DC48C7B0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4185D087-674B-45C1-86F4-19DC48C7B0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477198A7-CE76-47FB-9BD8-52E4C2295801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477198A7-CE76-47FB-9BD8-52E4C2295801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477198A7-CE76-47FB-9BD8-52E4C2295801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477198A7-CE76-47FB-9BD8-52E4C2295801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
