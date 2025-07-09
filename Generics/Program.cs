@@ -1,3 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿public class Program
+{
+    public static void Main(string[] args)
+    {
+        Customer customer = new Customer
+        {
+            Name = "John Doe",
+            CustomerId = "C12345",
+            Address = "123 Main St"
+        };
 
-Console.WriteLine("Hello, World!");
+        BankAccount account = new BankAccount(12345678, 500, customer, AccountType.Checking);
+        
+        Console.WriteLine(account.DisplayAccountInfo());
+    }
+}
