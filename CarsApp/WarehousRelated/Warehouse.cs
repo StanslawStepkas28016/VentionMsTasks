@@ -28,9 +28,7 @@ public sealed class Warehouse : IDisposable
     }
 
 
-    public delegate void RemoveOperationDelegate();
-
-    public void RemoveVehicle(Vehicle vehicle, RemoveOperationDelegate? removeOperation = null)
+    public void RemoveVehicle(Vehicle vehicle, Action? removeOperation = null)
     {
         var remove = _mockDatabase.Remove(vehicle);
 
