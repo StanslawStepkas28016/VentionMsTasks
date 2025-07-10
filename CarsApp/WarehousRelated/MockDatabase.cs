@@ -2,7 +2,7 @@ using CarsApp.CarRelated;
 
 namespace CarsApp.WarehousRelated;
 
-public class MockDatabase : IMockDatabase<Vehicle>
+public sealed class MockDatabase : IMockDatabase<Vehicle>
 {
     public List<Vehicle> Items { get; init; }
 

@@ -49,7 +49,7 @@ public sealed class Warehouse : IDisposable
         // Releasing resources which are unmanaged by .NET CLR,
         // for examples other .dll's etc
         Console.Out.WriteLine("Performing mock unmanaged resource operation");
-        
+
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.FileName = "ls";
         startInfo.Arguments = $"-al";
@@ -81,6 +81,11 @@ public sealed class Warehouse : IDisposable
     {
         Dispose(true);
         GC.SuppressFinalize(this);
+    }
+
+    public IMockExternalLoggingService AccessLoggingService()
+    {
+        return _externalLoggingService;
     }
 
     ~Warehouse()

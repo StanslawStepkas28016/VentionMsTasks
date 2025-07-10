@@ -1,6 +1,6 @@
 namespace CarsApp.WarehousRelated;
 
-public interface IMockDatabase<T>
+public  interface IMockDatabase<T>
 {
     List<T> Items { get; }
     void Connect();

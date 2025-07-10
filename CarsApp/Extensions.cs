@@ -1,4 +1,5 @@
 using CarsApp.CarRelated;
+using CarsApp.ExternalRelated;
 using CarsApp.WarehousRelated;
 
 namespace CarsApp;
@@ -18,5 +19,10 @@ public static class Extensions
 
                 warehouse.AddVehicle(v);
             });
+    }
+
+    public static void LogErrors(this MockExternalLoggingService mockExternalLoggingService, string message)
+    {
+        Console.Out.WriteLine(message);
     }
 }

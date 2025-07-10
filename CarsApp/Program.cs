@@ -67,5 +67,19 @@ class Program
         Console.Out.WriteLine("============================================================");
 
         // Delegates usage
+        var mockExternalLoggingService = warehouse.AccessLoggingService();
+
+        mockExternalLoggingService.DoSthWithDelegate(input => Console.Out.WriteLine($"From anon function: {input}")); // Anonymous function
+
+        mockExternalLoggingService.DoSthWithDelegate(ActualFunctionForDelegate); // Actual function
+
+        Console.Out.WriteLine("============================================================");
+
+        Console.ReadKey();
+    }
+
+    public static void ActualFunctionForDelegate(string log)
+    {
+        Console.Out.WriteLine($"From actual function {log}");
     }
 }
