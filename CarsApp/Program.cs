@@ -69,9 +69,17 @@ class Program
         // Delegates usage
         var mockExternalLoggingService = warehouse.AccessLoggingService();
 
-        mockExternalLoggingService.DoSthWithDelegate(input => Console.Out.WriteLine($"From anon function: {input}")); // Anonymous function
+        mockExternalLoggingService.DoSthWithDelegate(input =>
+            Console.Out.WriteLine($"From anon function: {input}")); // Anonymous function
 
         mockExternalLoggingService.DoSthWithDelegate(ActualFunctionForDelegate); // Actual function
+
+        warehouse.RemoveVehicle(familyCar2); // The delegate is optional
+        warehouse.RemoveVehicle(familyCar1, log =>
+        {
+            // Perform some other operations, for now just logging
+            Console.Out.WriteLine(log);
+        }); 
 
         Console.Out.WriteLine("============================================================");
 

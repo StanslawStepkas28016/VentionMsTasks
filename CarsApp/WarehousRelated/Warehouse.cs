@@ -13,7 +13,6 @@ public sealed class Warehouse : IDisposable
     {
         _mockDatabase = mockDatabase;
         _externalLoggingService = externalLoggingService;
-
         Setup();
     }
 
@@ -28,13 +27,21 @@ public sealed class Warehouse : IDisposable
         _mockDatabase.Add(vehicle);
     }
 
-    public void RemoveVehicle(Vehicle vehicle)
+
+    public delegate void RemoveOperationDelegate(string log);
+
+    public void RemoveVehicle(Vehicle vehicle, RemoveOperationDelegate? removeOperation = null)
     {
         var remove = _mockDatabase.Remove(vehicle);
 
         if (!remove)
         {
             throw new Exception("Vehicle not found!");
+        }
+
+        if (removeOperation != null)
+        {
+            removeOperation("A vehicle was successfully removed.");
         }
     }
 
