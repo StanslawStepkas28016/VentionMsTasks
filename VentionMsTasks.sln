@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuplesAndSwitchStatement", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsApp", "CarsApp\CarsApp.csproj", "{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14306EFA-52A2-4D68-99DB-D50FE24EB0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

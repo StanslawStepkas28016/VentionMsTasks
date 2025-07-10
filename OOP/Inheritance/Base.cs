@@ -2,10 +2,8 @@ namespace OOP.Inheritance;
 
 public class Base
 {
-    public int Id { get; set; } = 25;
-    public string SomeInfo { get; set; }
-
-    public static int a = 15;
+    protected int Id { get; set; } = 25;
+    protected  string SomeInfo { get; set; }
 
     public Base(int id, string someInfo)
     {
