@@ -28,7 +28,7 @@ public sealed class Warehouse : IDisposable
     }
 
 
-    public delegate void RemoveOperationDelegate(string log);
+    public delegate void RemoveOperationDelegate();
 
     public void RemoveVehicle(Vehicle vehicle, RemoveOperationDelegate? removeOperation = null)
     {
@@ -41,7 +41,7 @@ public sealed class Warehouse : IDisposable
 
         if (removeOperation != null)
         {
-            removeOperation("A vehicle was successfully removed.");
+            removeOperation();
         }
     }
 

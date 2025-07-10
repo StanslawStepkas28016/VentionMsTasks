@@ -75,10 +75,10 @@ class Program
         mockExternalLoggingService.DoSthWithDelegate(ActualFunctionForDelegate); // Actual function
 
         warehouse.RemoveVehicle(familyCar2); // The delegate is optional
-        warehouse.RemoveVehicle(familyCar1, log =>
+        warehouse.RemoveVehicle(familyCar1, () =>
         {
             // Perform some other operations, for now just logging
-            Console.Out.WriteLine(log);
+            Console.Out.WriteLine("Removing the vehicle was successful!");
         }); 
 
         Console.Out.WriteLine("============================================================");
