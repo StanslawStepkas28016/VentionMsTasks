@@ -1,4 +1,4 @@
-﻿using Classes_M1;
+﻿namespace BankCustomer;
 
 class Program
 {

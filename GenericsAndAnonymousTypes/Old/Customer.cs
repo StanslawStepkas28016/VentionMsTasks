@@ -1,3 +1,5 @@
+namespace Generics.Old;
+
 public record Customer
 {
     public string Name { get; init; }

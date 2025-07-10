@@ -1,6 +1,4 @@
-using System;
-
-namespace BankApp
+namespace BankCustomerV2
 {
     class Program
     {

@@ -1,4 +1,4 @@
-namespace CarsApp;
+namespace CarsApp.CarRelated;
 
 public class SportsCar : Vehicle
 {
@@ -49,5 +49,33 @@ public class SportsCar : Vehicle
     {
         _minSpeedToSet = 100;
         _maxSpeedToSet = 400;
+    }
+
+    public override void Drive()
+    {
+        Console.Out.WriteLine($"Going about {TopSpeed}!");
+    }
+
+    protected bool Equals(SportsCar other)
+    {
+        return base.Equals(other) && _topSpeed.Equals(other._topSpeed) && _timeTo100Km.Equals(other._timeTo100Km);
+    }
+
+    public override bool Equals(object? obj)
+    {
+        if (obj is null) return false;
+        if (ReferenceEquals(this, obj)) return true;
+        if (obj.GetType() != GetType()) return false;
+        return Equals((SportsCar)obj);
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(base.GetHashCode(), _topSpeed, _timeTo100Km);
+    }
+
+    public override string ToString()
+    {
+        return $"{base.ToString()}, {nameof(TopSpeed)}: {TopSpeed}, {nameof(TimeTo100Km)}: {TimeTo100Km}";
     }
 }

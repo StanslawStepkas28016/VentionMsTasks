@@ -1,3 +1,5 @@
+namespace Generics.Old;
+
 public struct Transaction
 {
     public double Amount { get; set; }

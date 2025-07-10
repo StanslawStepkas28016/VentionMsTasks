@@ -1,6 +1,4 @@
-using System;
-
-namespace BankApp
+namespace BankCustomerV2
 {
     // TASK 1: Define the AccountType enum
     // TASK 1: Step 1 - Define the AccountType enum

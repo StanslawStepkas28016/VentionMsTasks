@@ -1,4 +1,4 @@
-﻿using DecoupleWithInterfaces;
+﻿namespace DecoupleWithInterfaces;
 
 class Program
 {

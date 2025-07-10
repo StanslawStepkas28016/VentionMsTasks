@@ -1,5 +1,8 @@
-﻿using Generics;
+﻿using Generics.Generics1St;
 using Generics.Generics2Nd;
+using Generics.Old;
+
+namespace Generics;
 
 public class Program
 {

@@ -1,5 +1,7 @@
 ﻿using OOP.Inheritance;
 
+namespace OOP;
+
 class Program
 {
     public static void Main(string[] args)

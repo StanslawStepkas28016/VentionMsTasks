@@ -1,7 +1,8 @@
-namespace CarsApp;
+namespace CarsApp.CarRelated;
 
 public enum EngineCylinderCount
 {
+    V4,
     V6,
     V8,
     V12
@@ -52,5 +53,32 @@ public abstract class Vehicle
         BrandName = brandName;
         ModelName = modelName;
         EngineCylinderCount = engineCylinderCount;
+    }
+
+    public abstract void Drive();
+
+    protected bool Equals(Vehicle other)
+    {
+        return _brandName == other._brandName && _modelName == other._modelName &&
+               _engineCylinderCount == other._engineCylinderCount;
+    }
+
+    public override bool Equals(object? obj)
+    {
+        if (obj is null) return false;
+        if (ReferenceEquals(this, obj)) return true;
+        if (obj.GetType() != GetType()) return false;
+        return Equals((Vehicle)obj);
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(_brandName, _modelName, (int)_engineCylinderCount);
+    }
+
+    public override string ToString()
+    {
+        return
+            $"{nameof(BrandName)}: {BrandName}, {nameof(ModelName)}: {ModelName}, {nameof(EngineCylinderCount)}: {EngineCylinderCount}";
     }
 }

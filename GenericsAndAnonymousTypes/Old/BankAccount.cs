@@ -1,3 +1,5 @@
+namespace Generics.Old;
+
 public enum AccountType
 {
     Checking,

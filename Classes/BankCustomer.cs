@@ -1,4 +1,4 @@
-namespace Classes_M1;
+namespace BankCustomer;
 
 public class BankCustomer
 {

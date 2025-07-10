@@ -1,3 +1,5 @@
+namespace OOP.Properties;
+
 class MyClass
 {
     // Backing field

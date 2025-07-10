@@ -1,4 +1,4 @@
-namespace Generics;
+namespace Generics.Generics1St;
 
 public class Book : IDescribable
 {
