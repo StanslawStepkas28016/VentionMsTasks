@@ -56,6 +56,11 @@ public class SportsCar : Vehicle
         Console.Out.WriteLine($"Going about {TopSpeed}!");
     }
 
+    public new void DisplayingTestMethod()
+    {
+        Console.Out.WriteLine($"From {this.GetType().Name}");
+    }
+
     protected bool Equals(SportsCar other)
     {
         return base.Equals(other) && _topSpeed.Equals(other._topSpeed) && _timeTo100Km.Equals(other._timeTo100Km);

@@ -27,7 +27,6 @@ public sealed class Warehouse : IDisposable
         _mockDatabase.Add(vehicle);
     }
 
-
     public void RemoveVehicle(Vehicle vehicle, Action? removeOperation = null)
     {
         var remove = _mockDatabase.Remove(vehicle);

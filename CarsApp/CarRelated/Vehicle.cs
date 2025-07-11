@@ -8,7 +8,19 @@ public enum EngineCylinderCount
     V12
 }
 
-public abstract class Vehicle
+public interface IVehicle
+{
+    string BrandName { get; }
+    string ModelName { get; }
+    EngineCylinderCount EngineCylinderCount { get; set; }
+    void Drive();
+    void DisplayingTestMethod();
+    bool Equals(object? obj);
+    int GetHashCode();
+    string ToString();
+}
+
+public abstract class Vehicle : IVehicle
 {
     private string _brandName;
     private string _modelName;
@@ -56,6 +68,11 @@ public abstract class Vehicle
     }
 
     public abstract void Drive();
+
+    public void DisplayingTestMethod()
+    {
+        Console.Out.WriteLine($"From {GetType().Name}");
+    }
 
     protected bool Equals(Vehicle other)
     {

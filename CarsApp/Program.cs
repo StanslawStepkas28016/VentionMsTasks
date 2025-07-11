@@ -9,7 +9,7 @@ class Program
     public static void Main(string[] args)
     {
         // Polymorphism
-        Vehicle[] vehicles =
+        IVehicle[] vehicles =
         [
             new SportsCar("BMW", "325i", EngineCylinderCount.V6, 200, 3.2),
             new SportsCar("Porsche", "911", EngineCylinderCount.V8, 300, 2.9),
@@ -18,7 +18,8 @@ class Program
 
         foreach (var vehicle in vehicles)
         {
-            Console.Out.WriteLine(vehicle);
+            vehicle.Drive();
+            // Console.Out.WriteLine(vehicle);
         }
 
         Console.Out.WriteLine("============================================================");
@@ -45,7 +46,7 @@ class Program
 
         foreach (var vehicle in vehicles)
         {
-            warehouse.AddVehicle(vehicle);
+            warehouse.AddVehicle((Vehicle)vehicle);
         }
 
         warehouse.DisplayAllVehicles();
@@ -79,11 +80,23 @@ class Program
         {
             // Perform some other operations, for now just logging
             Console.Out.WriteLine("Removing the vehicle was successful!");
-        }); 
+        });
 
         Console.Out.WriteLine("============================================================");
 
-        Console.ReadKey();
+        // Method hiding
+        Vehicle v1 = new SportsCar("Audi", "Q3", EngineCylinderCount.V6, 200, 6.4);
+        ((Vehicle)(v1)).DisplayingTestMethod();
+
+        // Console.ReadKey();
+
+        int a = 5;
+
+        // & ^ |
+        int[] arr = [3, 2, 1, 5, 1];
+
+        var asSpan = arr.AsSpan(0, 3);
+        Console.Out.WriteLine(arr);
     }
 
     public static void ActualFunctionForDelegate(string log)
