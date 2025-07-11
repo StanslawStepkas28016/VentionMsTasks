@@ -1,4 +1,4 @@
-namespace EventsAndDelegates.Observer;
+namespace EventsAndDelegates.ObserverV1;
 
 internal interface ICustomer
 {

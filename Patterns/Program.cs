@@ -1,54 +1,7 @@
-﻿using EventsAndDelegates.Observer;
+﻿using EventsAndDelegates.ObserverV1;
+using EventsAndDelegates.ObserverV2;
 
 namespace EventsAndDelegates;
-
-interface IChannel
-{
-    event EventHandler<string> EventHandler;
-    void SendNotification(string message);
-}
-
-internal class Channel : IChannel
-{
-    public event EventHandler<string>? EventHandler;
-
-    public void SendNotification(string message)
-    {
-        EventHandler?.Invoke(this, message);
-    }
-}
-
-internal interface ISubscriber
-{
-    IChannel Channel { get; set; }
-    void Subscribe();
-    void UnSubscribe();
-}
-
-class Subscriber : ISubscriber
-{
-    public IChannel Channel { get; set; }
-
-    public Subscriber(IChannel channel)
-    {
-        Channel = channel;
-    }
-
-    public void Subscribe()
-    {
-        Channel.EventHandler += OnMessageReceived;
-    }
-
-    public void UnSubscribe()
-    {
-        Channel.EventHandler += OnMessageReceived;
-    }
-
-    private void OnMessageReceived(object? sender, string eventArgument)
-    {
-        Console.WriteLine(eventArgument);
-    }
-}
 
 class Program
 {
@@ -68,9 +21,12 @@ class Program
         var subscriber2 = new Subscriber(channel);
         subscriber1.Subscribe();
         subscriber2.Subscribe();
-        
+
         // Notify subs
-        channel.SendNotification("Hello World!");
+        channel.SendNotification(new CustomChannelArgs
+        {
+            Operation = () => { Console.WriteLine("Performing some operations..."); }
+        });
     }
 
     private static void ObserverNonCSharpNativeSolution()

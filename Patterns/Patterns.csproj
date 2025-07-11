@@ -8,8 +8,4 @@
         <RootNamespace>EventsAndDelegates</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="ObserverV2\" />
-    </ItemGroup>
-
 </Project>
