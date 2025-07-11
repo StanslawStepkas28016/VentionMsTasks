@@ -1,6 +1,6 @@
 using CarsApp.CarRelated;
 
-namespace CarsApp.WarehousRelated;
+namespace CarsApp.WarehouseRelated;
 
 public sealed class MockDatabase : IMockDatabase<Vehicle>
 {

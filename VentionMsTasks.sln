@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsApp", "CarsApp\CarsApp.csproj", "{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Span", "Span\Span.csproj", "{946B25F8-5E39-41C7-A372-9953660CFFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{51860748-0EAA-44F6-8133-30E9F7014035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD5DE7CB-DFB1-40A6-A66A-159AF1C1F372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{946B25F8-5E39-41C7-A372-9953660CFFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946B25F8-5E39-41C7-A372-9953660CFFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946B25F8-5E39-41C7-A372-9953660CFFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946B25F8-5E39-41C7-A372-9953660CFFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51860748-0EAA-44F6-8133-30E9F7014035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51860748-0EAA-44F6-8133-30E9F7014035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51860748-0EAA-44F6-8133-30E9F7014035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51860748-0EAA-44F6-8133-30E9F7014035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,6 @@
 using CarsApp.CarRelated;
 using CarsApp.ExternalRelated;
-using CarsApp.WarehousRelated;
+using CarsApp.WarehouseRelated;
 
 namespace CarsApp;
 

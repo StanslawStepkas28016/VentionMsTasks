@@ -2,7 +2,7 @@ using System.Diagnostics;
 using CarsApp.CarRelated;
 using CarsApp.ExternalRelated;
 
-namespace CarsApp.WarehousRelated;
+namespace CarsApp.WarehouseRelated;
 
 public sealed class Warehouse : IDisposable
 {
@@ -91,7 +91,7 @@ public sealed class Warehouse : IDisposable
     {
         return _externalLoggingService;
     }
-
+    
     ~Warehouse()
     {
         Dispose(false);

@@ -1,6 +1,6 @@
 ﻿using CarsApp.CarRelated;
 using CarsApp.ExternalRelated;
-using CarsApp.WarehousRelated;
+using CarsApp.WarehouseRelated;
 
 namespace CarsApp;
 
@@ -97,6 +97,8 @@ class Program
 
         var asSpan = arr.AsSpan(0, 3);
         Console.Out.WriteLine(arr);
+
+        Console.ReadKey();
     }
 
     public static void ActualFunctionForDelegate(string log)

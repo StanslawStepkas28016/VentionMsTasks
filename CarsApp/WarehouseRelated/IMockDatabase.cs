@@ -1,4 +1,4 @@
-namespace CarsApp.WarehousRelated;
+namespace CarsApp.WarehouseRelated;
 
 public  interface IMockDatabase<T>
 {
